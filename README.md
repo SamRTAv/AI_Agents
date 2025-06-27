@@ -1,0 +1,2 @@
+So here in this repo, first i have added a pytorch ipynb which explains about the data pre processing via pytorch in Deep learning and Transformer. Also, a mini project NanoGPT which is a model trained on Harry Potter (All seven .txt files) and can be used to generate probably another ending to the Harry Potter series😎 \\
+Next We'll be up with some i[ynb related the attention mechanism in the transformer architecture and also a LSTM and CNN miniproject in Pytorch
