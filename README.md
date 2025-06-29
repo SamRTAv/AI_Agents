@@ -15,9 +15,9 @@ Welcome to this repository! Here's a quick overview of the contents:
 
 ## 🚀 Upcoming Additions
 Stay tuned for more exciting content:
-- 🧬 Mini-projects implementing **LSTM** and **CNN** models in PyTorch.
-- 📌 Jupyter Notebooks explaining the **Attention Mechanism** in Transformer architectures
+-  Mini-projects implementing **LSTM** and **CNN** models in PyTorch.
+-  Jupyter Notebooks explaining the **Attention Mechanism** in Transformer architectures
 
 ---
 
-Feel free to explore, clone, and contribute! 💻✨
+Feel free to explore, clone, and contribute! 
