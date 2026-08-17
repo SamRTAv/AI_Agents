@@ -1,0 +1,28 @@
+# Secrets
+.env
+
+# Databases (runtime state — not source)
+*.db
+*.db-shm
+*.db-wal
+
+# Built vector index — regenerate with scripts/ingest.py
+data/faiss_index/*
+!data/faiss_index/.gitkeep
+
+# Corpus PDFs are large; keep the folder shape, not the files
+data/corpus/**/*.pdf
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# Model cache (sentence-transformers downloads land here)
+.cache/
+
+# Editors
+.vscode/
+.idea/

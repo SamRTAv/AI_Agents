@@ -1,0 +1,697 @@
+[
+  {
+    "id": "exp-01",
+    "kind": "expense",
+    "error": null,
+    "query": "How much did I spend in September 2025?",
+    "answer": "**Total spending in September\u202f2025:**\u202f\u20b9\u202f18,199  \n\n**Break\u2011down by category**\n\n| Category | Amount (\u20b9) | Share of total |\n|----------|-----------|----------------|\n| Food | 4,450 | 24.5\u202f% |\n| Shopping | 3,500 | 19.2\u202f% |\n| Transport | 2,850 | 15.7\u202f% |\n| Education | 2,599 | 14.3\u202f% |\n| Utilities | 2,500 | 13.7\u202f% |\n| Health | 1,500 | 8.2\u202f% |\n| Entertainment | 800 | 4.4\u202f% |\n\n*The total (\u20b9\u202f18,199) is the sum of all category amounts shown above.*",
+    "expected_tools": [
+      "summarize"
+    ],
+    "tools": [
+      "summarize"
+    ],
+    "paused": false,
+    "tool_recall": true,
+    "no_forbidden": true,
+    "approval_ok": true,
+    "latency_s": 5.066378499999928
+  },
+  {
+    "id": "exp-02",
+    "kind": "expense",
+    "error": null,
+    "query": "Which category did I spend the most on in September 2025?",
+    "answer": "In September\u202f2025 you spent the most on **food**, with a total of **\u20b94,450** (about **24.5\u202f%** of your September spending).  \n\nHere\u2019s the full breakdown for the month (\u20b9\u202ftotal\u202f=\u202f\u20b918,199):\n\n| Category | Amount (\u20b9) | Share of total |\n|----------|-----------|----------------|\n| Food | 4,450 | 24.5\u202f% |\n| Shopping | 3,500 | 19.2\u202f% |\n| Transport | 2,850 | 15.7\u202f% |\n| Education | 2,599 | 14.3\u202f% |\n| Utilities | 2,500 | 13.7\u202f% |\n| Health | 1,500 | 8.2\u202f% |\n| Entertainment | 800 | 4.4\u202f% |\n\nSo food was your biggest expense category for that month.",
+    "expected_tools": [
+      "summarize"
+    ],
+    "tools": [
+      "summarize"
+    ],
+    "paused": false,
+    "tool_recall": true,
+    "no_forbidden": true,
+    "approval_ok": true,
+    "latency_s": 4.7449168000000554
+  },
+  {
+    "id": "exp-03",
+    "kind": "expense",
+    "error": null,
+    "query": "Show me every transaction between 1 and 15 September 2025.",
+    "answer": "Here are the transactions you recorded between\u202f1\u202fSeptember\u202f2025\u202fand\u202f15\u202fSeptember\u202f2025:\n\n| Date | Amount (\u20b9) | Category | Sub\u2011category | Note |\n|------|------------|----------|--------------|------|\n| 2025\u201109\u201101 | 1,200 | food | Dining\u202fOut | Lunch at restaurant with colleagues |\n| 2025\u201109\u201103 | 2,500 | utilities | \u2013 | Electricity bill payment |\n| 2025\u201109\u201107 | 800 | entertainment | \u2013 | Movie tickets for weekend show |\n| 2025\u201109\u201110 | 1,500 | health | \u2013 | Doctor consultation and medicines |\n| 2025\u201109\u201112 | 3,500 | shopping | \u2013 | Clothing purchase at mall |\n| 2025\u201109\u201115 | 450 | transport | \u2013 | Auto rickshaw rides |\n\n**Total spent:** \u20b99,950.",
+    "expected_tools": [
+      "list_expenses"
+    ],
+    "tools": [
+      "list_expenses"
+    ],
+    "paused": false,
+    "tool_recall": true,
+    "no_forbidden": true,
+    "approval_ok": true,
+    "latency_s": 4.732263099999955
+  },
+  {
+    "id": "exp-04",
+    "kind": "expense",
+    "error": null,
+    "query": "How much went on transport in September 2025?",
+    "answer": "In September\u202f2025 you spent **\u20b92,850** on transport.\n\n* This is the total of all transport\u2011category entries recorded between\u202f2025\u201109\u201101 and\u202f2025\u201109\u201130.",
+    "expected_tools": [
+      "summarize"
+    ],
+    "tools": [
+      "summarize"
+    ],
+    "paused": false,
+    "tool_recall": true,
+    "no_forbidden": true,
+    "approval_ok": true,
+    "latency_s": 4.773039600000175
+  },
+  {
+    "id": "exp-05",
+    "kind": "expense",
+    "error": null,
+    "query": "What percentage of my September spending was food?",
+    "answer": "In September\u202f2026 you didn\u2019t record any expenses, so the total spending is **\u20b90** and the food\u2011category total is also **\u20b90**.  \n\n**Percentage of September spending that was food = (\u20b90\u202f\u00f7\u202f\u20b90)\u202f\u00d7\u202f100 = 0\u202f%** (no spending to allocate).  \n\nIf you expected to see expenses, you may need to add them using the\u202f`add_expense`\u202ffunction. Let me know if you\u2019d like to record any September transactions.",
+    "expected_tools": [
+      "summarize"
+    ],
+    "tools": [
+      "summarize"
+    ],
+    "paused": false,
+    "tool_recall": true,
+    "no_forbidden": true,
+    "approval_ok": true,
+    "latency_s": 13.045444699999962
+  },
+  {
+    "id": "exp-06",
+    "kind": "expense",
+    "error": null,
+    "query": "What expense categories can I use?",
+    "answer": "Here are the expense categories you can use (with their sub\u2011categories) for recording your spending:\n\n| Main Category | Sub\u2011categories |\n|---------------|----------------|\n| **food** | groceries, fruits_vegetables, dairy_bakery, dining_out, coffee_tea, snacks, delivery_fees, other |\n| **transport** | fuel, public_transport, cab_ride_hailing, parking, tolls, vehicle_service, other |\n| **housing** | rent, maintenance_hoa, property_tax, repairs_service, cleaning, furnishing, other |\n| **utilities** | electricity, water, gas, internet_broadband, mobile_phone, tv_dth, other |\n| **health** | medicines, doctor_consultation, diagnostics_labs, insurance_health, fitness_gym, other |\n| **education** | books, courses, online_subscriptions, exam_fees, workshops, other |\n| **family_kids** | school_fees, daycare, toys_games, clothes, events_birthdays, other |\n| **entertainment** | movies_events, streaming_subscriptions, games_apps, outing, other |\n| **shopping** | clothing, footwear, accessories, electronics_gadgets, appliances, home_decor, other |\n| **subscriptions** | saas_tools, cloud_ai, newsletters, music_video, storage_backup, other |\n| **personal_care** | salon_spa, grooming, cosmetics, hygiene, other |\n| **gifts_donations** | gifts_personal, charity_donation, festivals, other |\n| **finance_fees** | bank_charges, late_fees, interest, brokerage, other |\n| **business** | software_tools, hosting_domains, marketing_ads, contractor_payments, travel_business, office_supplies, other |\n| **travel** | flights, hotels, train_bus, visa_passport, local_transport, food_travel, other |\n| **home** | household_supplies, cleaning_supplies, kitchenware, small_repairs, pest_control, other |\n| **pet** | food, vet, grooming, supplies, other |\n| **taxes** | income_tax, gst, professional_tax, filing_fees, other |\n| **investments** | mutual_funds, stocks, fd_rd, gold, crypto, brokerage_fees, other |\n| **misc** | uncategorized, rounding, other |\n\nYou can pick any main category (and a sub\u2011category if you wish) when you add an expense. Let me know if you\u2019d like to record a transaction or see a summary of your spending!",
+    "expected_tools": [
+      "list_categories"
+    ],
+    "tools": [
+      "list_categories"
+    ],
+    "paused": false,
+    "tool_recall": true,
+    "no_forbidden": true,
+    "approval_ok": true,
+    "latency_s": 17.193868300000076
+  },
+  {
+    "id": "exp-07",
+    "kind": "expense",
+    "error": null,
+    "query": "Did I spend anything on healthcare in September 2025?",
+    "answer": "Yes \u2013 according to your expense records you had one healthcare\u2011related transaction in September\u202f2025:\n\n- **Category:** Health (healthcare)  \n- **Date range:** 1\u202fSept\u202f2025\u202f\u2013\u202f30\u202fSept\u202f2025  \n- **Total amount:** **\u20b91,500** (100\u202f% of your health\u2011category spending for that month)  \n\nSo you did spend on healthcare that month, amounting to \u20b91,500.",
+    "expected_tools": [
+      "summarize"
+    ],
+    "tools": [
+      "summarize"
+    ],
+    "paused": false,
+    "tool_recall": true,
+    "no_forbidden": true,
+    "approval_ok": true,
+    "latency_s": 11.786468900000045
+  },
+  {
+    "id": "exp-08",
+    "kind": "expense",
+    "error": null,
+    "query": "List my utilities bills for September 2025.",
+    "answer": "Here are the utilities\u2011related expenses you recorded for September\u202f2025:\n\n| Date | Amount (\u20b9) | Category | Sub\u2011category | Note |\n|------|------------|----------|--------------|------|\n| 2025\u201109\u201103 | 2,500 | utilities | \u2013 | Electricity bill payment |\n\n**Summary**\n\n- **Total utilities spend in September\u202f2025:** \u20b92,500  \n- **Number of utilities entries:** 1  \n\n(These figures come from your expense records.)",
+    "expected_tools": [
+      "list_expenses"
+    ],
+    "tools": [
+      "summarize",
+      "list_expenses"
+    ],
+    "paused": false,
+    "tool_recall": true,
+    "no_forbidden": true,
+    "approval_ok": true,
+    "latency_s": 28.258618399999932
+  },
+  {
+    "id": "exp-09",
+    "kind": "expense",
+    "error": null,
+    "query": "What was my single largest expense in September 2025?",
+    "answer": "Your single largest expense in **September\u202f2025** was:\n\n- **Amount:**\u202f\u20b9\u202f3,500  \n- **Date:**\u202f12\u202fSeptember\u202f2025  \n- **Category:**\u202f**shopping** (clothing purchase at a mall)  \n- **Note:**\u202f\u201cClothing purchase at mall\u201d\n\nAll other expenses that month were lower than this amount.",
+    "expected_tools": [
+      "list_expenses"
+    ],
+    "tools": [
+      "list_expenses"
+    ],
+    "paused": false,
+    "tool_recall": true,
+    "no_forbidden": true,
+    "approval_ok": true,
+    "latency_s": 23.040081500000042
+  },
+  {
+    "id": "exp-10",
+    "kind": "expense",
+    "error": null,
+    "query": "How many separate transactions did I record in September 2025?",
+    "answer": "You recorded **15 separate transactions** in September\u202f2025.",
+    "expected_tools": [
+      "list_expenses"
+    ],
+    "tools": [
+      "list_expenses"
+    ],
+    "paused": false,
+    "tool_recall": true,
+    "no_forbidden": true,
+    "approval_ok": true,
+    "latency_s": 19.580272499999865
+  },
+  {
+    "id": "exp-11",
+    "kind": "expense",
+    "error": null,
+    "query": "Break down my September 2025 spending by category with percentages.",
+    "answer": "**September\u202f2025 Spending \u2013 Category Breakdown**\n\n| Category | Amount (\u20b9) | % of Total |\n|----------|-----------|------------|\n| Food | 4,450 | 24.5\u202f% |\n| Shopping | 3,500 | 19.2\u202f% |\n| Transport | 2,850 | 15.7\u202f% |\n| Education | 2,599 | 14.3\u202f% |\n| Utilities | 2,500 | 13.7\u202f% |\n| Health | 1,500 | 8.2\u202f% |\n| Entertainment | 800 | 4.4\u202f% |\n| **Total** | **\u20b9\u202f18,199** | **100\u202f%** |\n\n*The percentages are calculated as (category amount \u00f7 total September spending)\u202f\u00d7\u202f100, rounded to one decimal place.*",
+    "expected_tools": [
+      "summarize"
+    ],
+    "tools": [
+      "summarize"
+    ],
+    "paused": false,
+    "tool_recall": true,
+    "no_forbidden": true,
+    "approval_ok": true,
+    "latency_s": 15.934496900000113
+  },
+  {
+    "id": "exp-12",
+    "kind": "expense",
+    "error": null,
+    "query": "How much did I spend on education in September 2025?",
+    "answer": "In September\u202f2025 you spent **\u20b9\u202f2,599** on the **Education** category (100\u202f% of your education spending for that month).",
+    "expected_tools": [
+      "summarize"
+    ],
+    "tools": [
+      "summarize"
+    ],
+    "paused": false,
+    "tool_recall": true,
+    "no_forbidden": true,
+    "approval_ok": true,
+    "latency_s": 13.740079700000024
+  },
+  {
+    "id": "rag-01",
+    "kind": "rag",
+    "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kzhz142fe9pad94g07z2jvt7` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 5297, Requested 2917. Please try again in 1.605s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+    "tool_recall": false,
+    "no_forbidden": false,
+    "approval_ok": false,
+    "latency_s": 22.044353900000033,
+    "tools": []
+  },
+  {
+    "id": "rag-02",
+    "kind": "rag",
+    "error": null,
+    "query": "What is a Business Correspondent in banking?",
+    "answer": "**Business Correspondent (BC)**  \n\nA Business Correspondent is an individual\u202for\u202fentity appointed by a bank to act as its agent on the ground, especially in remote or underserved areas.\u202fThe BC uses information\u2011and\u2011communication\u2011technology (ICT) devices such as handheld terminals, smart\u2011card readers or mobile phones to deliver banking services at the customer\u2019s doorstep, where a full\u2011service branch may be far away.\u202fTypical services include basic deposits, withdrawals, payments, remittances and the distribution of financial products, but a BC **cannot issue credit cards or extend loans**\u3010source: FE_Handbook_Eng.pdf \u2013 \u201cBusiness Correspondent (BC): \u2026 a mode of providing banking service at our doorstep as bank branch is far off from our area.\u201d\u3011.  \n\nIn short, a BC is the bank\u2019s representative who brings core banking functions to people in villages or other locations that lack a physical branch, helping expand financial inclusion.",
+    "expected_tools": [
+      "search_finance_docs"
+    ],
+    "tools": [
+      "search_finance_docs"
+    ],
+    "paused": false,
+    "tool_recall": true,
+    "no_forbidden": true,
+    "approval_ok": true,
+    "latency_s": 9.946752299999844
+  },
+  {
+    "id": "rag-03",
+    "kind": "rag",
+    "error": null,
+    "query": "Explain what an NBFC is.",
+    "answer": "**Non\u2011Banking Financial Company (NBFC)**  \n\n- **Legal form** \u2013 An NBFC is a company incorporated under the Companies Act\u202f1956/2013.  \n- **Regulation** \u2013 It is regulated by the Reserve Bank of India (RBI) but **does not have a banking licence**.  \n- **Core activities** \u2013 NBFCs may engage in any of the following financial businesses:  \n\n  1. **Loans and advances** (e.g., personal, vehicle, or commercial loans)  \n  2. **Acquisition of securities** (investment in bonds, debentures, etc.)  \n  3. **Leasing** (equipment or vehicle leasing)  \n  4. **Hire\u2011purchase** (financing the purchase of goods)  \n  5. **Insurance business** (through subsidiaries or partnerships)  \n  6. **Chit fund business** (where permitted)  \n\n- **Key difference from banks** \u2013 NBFCs **cannot accept demand deposits** (i.e., they cannot take checking\u2011account style deposits that are payable on demand). Consequently, they are **not part of the payment\u2011and\u2011settlement system** that banks operate.  \n\n> *Source:* \u201cNon\u2011Banking Financial Company (NBFC): A non\u2011banking institution \u2026 registered under Companies Act\u202f1956/2013 regulated by RBI. NBFCs engage in loans and advances, acquisition of securities, leasing, hire\u2011purchase, insurance, chit business, etc. They cannot accept demand deposits and cannot become part of the payment and settlement system.\u201d \u2013 Financial Education Handbook, NCFE (2021)\u30100\u2020source\u3011  \n\nIn short, an NBFC is a RBI\u2011regulated financial entity that offers many of the services banks do\u2014such as credit, leasing, and investment\u2014but it does **not** take demand deposits and therefore operates outside the traditional banking payment network.",
+    "expected_tools": [
+      "search_finance_docs"
+    ],
+    "tools": [
+      "search_finance_docs"
+    ],
+    "paused": false,
+    "tool_recall": true,
+    "no_forbidden": true,
+    "approval_ok": true,
+    "latency_s": 10.222700999999915
+  },
+  {
+    "id": "rag-04",
+    "kind": "rag",
+    "error": null,
+    "query": "How does compound interest work?",
+    "answer": "**What compound interest is**\n\nCompound interest means you earn (or pay) interest **on the original principal *and* on the interest that has already been added to that principal**.  In other words, it is \u201cinterest on interest.\u201d\u202f\u202f(see\u202fFAME\u202f2024\u202fFinancial\u202fCompetencies, RBI\u202ffinancial\u2011inclusion booklet\u202f\u30100\u2020L7-L13\u3011).\n\n**Why it matters**\n\nBecause the interest that accrues each period is added to the balance, the amount of interest earned grows faster than with simple interest, especially over long periods.  The RBI booklet notes that \u201cwhen this compounding takes place over a long duration, the return becomes much higher compared to simple interest\u201d\u30101\u2020L1-L5\u3011.\n\n**The standard formula**\n\n\\[\nA = P \\left(1 + \\frac{r}{n}\\right)^{n t}\n\\]\n\nwhere  \n\n* **A** = amount after *t* years (principal\u202f+\u202finterest)  \n* **P** = initial principal (the money you invest or borrow)  \n* **r** = annual nominal interest rate (as a decimal, e.g., 10\u202f%\u202f=\u202f0.10)  \n* **n** = number of compounding periods per year (e.g., 4 for quarterly, 12 for monthly)  \n* **t** = number of years the money is left to grow  \n\n**Simple example (from the same RBI material)**  \n\n| Year | Principal at start | Interest @\u202f10\u202f% (compounded yearly) | Balance at end |\n|------|-------------------|------------------------------------|----------------|\n| 1    | \u20b910,000           | \u20b91,000                             | \u20b911,000 |\n| 2    | \u20b911,000           | \u20b91,100                             | \u20b912,100 |\n| 3    | \u20b912,100           | \u20b91,210                             | \u20b913,310 |\n\n(See the RBI example showing Year\u202f1\u20113 calculations\u30101\u2020L6-L13\u3011.)\n\n**Quick comparison with simple interest**\n\n*Simple interest* at 10\u202f% for 10\u202fyears on \u20b910,000 would give \u20b920,000 total.  \n*Compound interest* at the same nominal rate, compounded quarterly, would give about **\u20b926,851** (\u2248\u202f34\u202f% more)\u30102\u2020L1-L7\u3011.\n\n**Key take\u2011aways**\n\n1. **Interest is added back to the principal each compounding period.**  \n2. **The more frequently it compounds (higher\u202fn), the larger the final amount.**  \n3. **Longer horizons amplify the effect**, making compounding a powerful tool for savings and a cost factor for loans.  \n\nSo, compound interest works by repeatedly reinvesting earned interest, causing the balance to grow exponentially rather than linearly.",
+    "expected_tools": [
+      "search_finance_docs"
+    ],
+    "tools": [
+      "search_finance_docs"
+    ],
+    "paused": false,
+    "tool_recall": true,
+    "no_forbidden": true,
+    "approval_ok": true,
+    "latency_s": 30.18294130000004
+  },
+  {
+    "id": "rag-05",
+    "kind": "rag",
+    "error": null,
+    "query": "What is diversification and why does it matter?",
+    "answer": "**Diversification \u2013 definition**\n\nDiversification is the practice of spreading your investment money across a variety of assets rather than concentrating it in a single one.\u202fIn plain terms, it means \u201cnot putting all your eggs in one basket.\u201d\u202f(See *FAME* financial\u2011awareness material,\u202fsource\u202fFAME202426022024.pdf).\n\n**Why diversification matters**\n\n| Reason | Explanation |\n|--------|--------------|\n| **Risk reduction** | Different assets (e.g., equities, bonds, gold, real\u2011estate, bank deposits) do not move together. If the price of one asset falls, gains in another can offset the loss, protecting the overall portfolio. (FAME202426022024.pdf) |\n| **Loss protection** | By not relying on a single investment, you guard yourself against a severe loss that could occur if that one investment performs poorly. |\n| **Smoother returns** | A diversified mix tends to produce more stable, less volatile returns over time, making it easier to stay on track with financial goals. |\n| **Opportunity to capture growth** | While some assets may under\u2011perform, others may outperform, allowing you to benefit from multiple sources of growth. |\n\n**Key takeaway**\n\nDiversification is a core risk\u2011management tool recommended in financial\u2011education programmes (e.g., the FAME curriculum). By allocating money across different asset classes\u2014such as bank deposits, mutual funds, equities, bonds, gold, and real\u2011estate\u2014you lower the chance that a downturn in any single market will wipe out a large portion of your wealth. This makes your overall investment journey safer and more predictable.",
+    "expected_tools": [
+      "search_finance_docs"
+    ],
+    "tools": [
+      "search_finance_docs"
+    ],
+    "paused": false,
+    "tool_recall": true,
+    "no_forbidden": true,
+    "approval_ok": true,
+    "latency_s": 13.31591780000008
+  },
+  {
+    "id": "rag-06",
+    "kind": "rag",
+    "error": null,
+    "query": "What is a Sovereign Gold Bond?",
+    "answer": "**Sovereign Gold Bond (SGB)**  \n\n- **What it is:** A\u202fSovereign Gold Bond is a **government\u2011issued security that is denominated in grams of gold**.\u202fInstead of buying physical gold, you buy a bond whose value moves with the price of gold.\u202fThe bond is backed by the Government of India, so the principal is guaranteed at maturity.\u202f(Found in the \u201cFinancial\u2011Education Handbook \u2013 Module\u202f5\u202fInvestment\u201d, which describes SGBs as \u201cgovernment securities denominated in grams of gold \u2026 a substitute for holding physical gold.\u201d)  \n\n- **Key features**  \n  1. **Denomination:** Each bond represents a fixed weight of gold (e.g., 1\u202fgram, 2\u202fgrams, etc.).  \n  2. **Issue price:** Paid in cash at the prevailing market price of gold on the issue date, plus a small markup.  \n  3. **Maturity:** Typically **8\u202fyears** (with an early\u2011exit option after the 5th year). At maturity the principal is repaid in cash at the then\u2011prevailing gold price.  \n  4. **Interest:** A **fixed coupon** (currently around\u202f2.5\u202f%\u202fp.a.) is paid semi\u2011annually on the **face value** of the bond (i.e., on the amount you invested, not on the gold price).  \n  5. **Tax treatment:**  \n     - **Interest** is taxable as per your income\u2011tax slab.  \n     - **Capital gains** on redemption (or on sale on a stock\u2011exchange) are **exempt from tax** because the bond is a government security.  \n  6. **Liquidity:** Can be traded on recognised stock exchanges (NSE/BSE) during the holding period, giving you a market\u2011based exit option before maturity.  \n\n- **Why people use SGBs**  \n  - **Safety:** Backed by the sovereign, so the principal is secure.  \n  - **No storage hassle:** No need for vaults, insurance, or making\u2011charges that physical gold entails.  \n  - **Tax advantage:** Tax\u2011free capital gains on redemption.  \n  - **Earn interest:** You receive a modest, guaranteed coupon in addition to any price appreciation of gold.  \n\nIn short, a Sovereign Gold Bond lets you invest in gold\u2019s price movements while enjoying the safety of a government\u2011guaranteed security, regular interest, and favourable tax treatment.",
+    "expected_tools": [
+      "search_finance_docs"
+    ],
+    "tools": [
+      "search_finance_docs",
+      "search_finance_docs",
+      "search_finance_docs",
+      "search_finance_docs"
+    ],
+    "paused": false,
+    "tool_recall": true,
+    "no_forbidden": true,
+    "approval_ok": true,
+    "latency_s": 100.13904360000015
+  },
+  {
+    "id": "rag-07",
+    "kind": "rag",
+    "error": "Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kzhz142fe9pad94g07z2jvt7` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 8450, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+    "tool_recall": false,
+    "no_forbidden": false,
+    "approval_ok": false,
+    "latency_s": 152.8334996000001,
+    "tools": []
+  },
+  {
+    "id": "rag-08",
+    "kind": "rag",
+    "error": null,
+    "query": "What is the difference between saving and investing?",
+    "answer": "**Saving vs\u202fInvesting \u2013 key differences**\n\n| Aspect | Saving | Investing |\n|--------|--------|-----------|\n| **Purpose** | Build a safety\u2011net and meet short\u2011 to medium\u2011term goals by setting aside money **before** you spend it. | Grow wealth over the long term to meet larger goals (e.g., retirement, buying a house) by putting money to work. |\n| **Typical vehicles** | Savings\u2011bank account, recurring/fixed deposits, post\u2011office savings schemes. | Equities (shares), mutual funds, bonds, real\u2011estate, other market\u2011linked products. |\n| **Safety of principal** | High \u2013 the amount is usually guaranteed (e.g., bank deposits up to \u20b95\u202flakh under DICGC). | Varies \u2013 principal is **not** guaranteed; equity can lose value, bonds can default. |\n| **Liquidity** | Very high \u2013 you can withdraw quickly with little or no loss. | Varies \u2013 listed shares and mutual funds are fairly liquid, but fixed\u2011term deposits or real\u2011estate may lock funds for months/years. |\n| **Expected return** | Low but stable (interest on a savings account or FD). | Higher potential return, but comes with higher risk. |\n| **Risk level** | Low \u2013 mainly interest\u2011rate risk. | Higher \u2013 market risk, credit risk, etc. |\n\nThese points are drawn from the Financial Education Handbook used by Indian regulators:\n\n* **Saving** \u2013 described as \u201cset aside a portion of your income **before** you spend anything\u201d and emphasises safety, liquidity and modest return (e.g., bank savings account, fixed deposits)\u3010source: FE_Handbook_Eng.pdf, Module\u202f1 BASIC CONCEPTS\u3011.  \n* **Investing** \u2013 presented as a \u201crewarding activity \u2026 that can help you meet your financial goals \u2026 but often comes with risks\u201d and includes equity as an example of a higher\u2011return, higher\u2011risk option\u3010source: FE_Handbook_Eng.pdf, Module\u202f5 INVESTMENT\u3011.  \n\nIn short, **saving** is about preserving capital with minimal risk and easy access, while **investing** aims for higher growth by accepting greater risk and potentially lower liquidity.",
+    "expected_tools": [
+      "search_finance_docs"
+    ],
+    "tools": [
+      "search_finance_docs"
+    ],
+    "paused": false,
+    "tool_recall": true,
+    "no_forbidden": true,
+    "approval_ok": true,
+    "latency_s": 7.325428699999975
+  },
+  {
+    "id": "rag-09",
+    "kind": "rag",
+    "error": "Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kzhz142fe9pad94g07z2jvt7` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 8327, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+    "tool_recall": false,
+    "no_forbidden": false,
+    "approval_ok": false,
+    "latency_s": 166.9285044000003,
+    "tools": []
+  },
+  {
+    "id": "rag-10",
+    "kind": "rag",
+    "error": "Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kzhz142fe9pad94g07z2jvt7` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 8034, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+    "tool_recall": false,
+    "no_forbidden": false,
+    "approval_ok": false,
+    "latency_s": 210.28370650000033,
+    "tools": []
+  },
+  {
+    "id": "rag-11",
+    "kind": "rag",
+    "error": null,
+    "query": "What is a mutual fund?",
+    "answer": "**Mutual fund \u2013 definition (SEBI/AMFI)**  \n\nA mutual fund is a **collective investment scheme** that **pools money from many individual investors** and invests that pool in a diversified portfolio of assets such as **equities, bonds, money\u2011market instruments, or other securities**.  \n\n- Each investor receives **units** of the fund, and each unit represents the investor\u2019s **proportionate ownership** of the fund\u2019s overall holdings and the income those holdings generate.  \n- The fund is managed by a professional **asset\u2011management company** that makes investment decisions on behalf of the unit\u2011holders, subject to the investment objectives and limits laid down in the scheme\u2019s offer document.  \n\n*Source:* Financial Education Handbook (SEBI/AMFI), Module\u202f5\u202f\u2013\u202fInvestment, \u201cMutual Funds\u201d section.  \n\nIn short, a mutual fund lets you invest a relatively small amount of money and gain exposure to a diversified set of securities, with the fund\u2019s manager handling the buying, selling, and administration of the portfolio.",
+    "expected_tools": [
+      "search_finance_docs"
+    ],
+    "tools": [
+      "search_finance_docs"
+    ],
+    "paused": false,
+    "tool_recall": true,
+    "no_forbidden": true,
+    "approval_ok": true,
+    "latency_s": 1.5427683999996589
+  },
+  {
+    "id": "rag-12",
+    "kind": "rag",
+    "error": null,
+    "query": "Why is it risky to keep all savings in cash at home?",
+    "answer": "Keeping all of your savings as cash at home is considered risky for several reasons that are highlighted in official financial\u2011education material from the Reserve Bank of India (RBI) and other regulator\u2011backed guides.\n\n| Risk | Why it matters when cash is stored at home |\n|------|--------------------------------------------|\n| **Safety of principal** | The RBI\u2019s \u201cBasic Banking\u201d guidance stresses that *\u201cSafety will depend on how certain/guaranteed return of your principal amount \u2026 Government Bonds are the safest. Bank Fixed Deposits are also considered comparatively safe.\u201d*\u202fCash kept at home has **no guarantee** \u2013 it is vulnerable to theft, fire, water damage or simple misplacement, and there is no institutional backing to replace it if it is lost. |\n| **Lack of insurance protection** | Unlike bank deposits, which are covered by the Deposit Insurance and Credit Guarantee Corporation (DICGC) up to\u202f\u20b95\u202flakh per depositor per bank, cash at home is **un\u2011insured**. If a burglary or disaster occurs, you cannot claim any compensation. |\n| **No interest or return** | The same RBI material advises that savings should be placed in \u201c*liquid assets* \u2026 that can give a **guaranteed return of the principal**.\u201d Cash at home earns **zero interest**, so the amount you keep simply sits idle. |\n| **Inflation erosion** | Because cash does not earn any return, its purchasing power declines with inflation. Over a year, an average Indian inflation rate of about\u202f5\u20116\u202f% (as reported by the RBI) would reduce the real value of \u20b91\u202flakh kept at home to roughly \u20b994\u201195\u202fk. |\n| **Opportunity cost** | The RBI\u2019s financial\u2011education handbook also warns: \u201c*Do not put your money in instruments that are very risky / unregulated, you may lose all of it !!!*\u201d While cash at home is not a \u201cfinancial instrument,\u201d it is **un\u2011regulated** and offers no opportunity to earn higher, yet still safe, returns (e.g., a bank FD at 6\u20117\u202f% p.a.). |\n| **Liquidity & tracking issues** | Large amounts of physical cash are harder to move safely and to keep a clear record of. This can lead to accidental overspending or difficulty proving ownership if a dispute arises. |\n\n**Bottom line:**  \n- Cash at home lacks the **institutional safety net** (deposit insurance, legal protection).  \n- It provides **no interest**, so inflation erodes its value.  \n- It is **exposed to theft, fire, loss**, and is difficult to track.\n\nFor a more secure approach, the RBI recommends splitting savings across **safe, liquid, and interest\u2011bearing instruments** such as bank Fixed Deposits, government bonds, or a small emergency\u2011fund in a savings account\u2014each of which offers protection, some return, and easier management.",
+    "expected_tools": [
+      "search_finance_docs"
+    ],
+    "tools": [
+      "search_finance_docs"
+    ],
+    "paused": false,
+    "tool_recall": true,
+    "no_forbidden": true,
+    "approval_ok": true,
+    "latency_s": 3.8109267999998337
+  },
+  {
+    "id": "rag-13",
+    "kind": "rag",
+    "error": null,
+    "query": "What is an exchange traded fund?",
+    "answer": "**Exchange\u2011Traded Fund (ETF)**  \n\nAn Exchange\u2011Traded Fund is a type of mutual fund that is **listed and traded on a stock exchange** just like an individual share.  It holds a basket of underlying assets \u2013 such as equities, bonds, commodities (e.g., gold) or a mix \u2013 and its units can be bought or sold throughout the trading day at market\u2011determined prices.  \n\nKey points (as described in the SEBI\u2011approved financial\u2011education handbook):\n\n| Feature | Explanation |\n|---------|--------------|\n| **Structure** | A commodity\u2011based mutual fund (e.g., a Gold ETF) that invests in the underlying asset. |\n| **Trading** | Trades on the stock exchange\u202f\u2192\u202fprices move intraday, and you can place market or limit orders. |\n| **Pricing** | The market price may differ slightly from the fund\u2019s Net Asset Value (NAV); arbitrage mechanisms keep them close. |\n| **Regulation** | Regulated by SEBI under the same framework that governs mutual funds and listed securities. |\n| **Benefits** | \u2022 Immediate liquidity<br>\u2022 Lower expense ratios than many actively managed funds<br>\u2022 Transparent holdings (usually disclosed daily) |\n| **Examples** | Gold ETF, Nifty\u201150 ETF, corporate\u2011bond ETF, etc. |\n\n> *\u201cGold ETF, or Exchange Traded Fund, is a commodity\u2011based Mutual Fund that invests in assets like gold. These exchange\u2011traded funds perform like individual stocks and are traded similarly on the stock exchange.\u201d* \u2013 Financial Education Handbook, Module\u202f5\u202f(Investment)\u3010source: FE_Handbook_Eng.pdf\u3011  \n\nIn short, an ETF gives you exposure to a diversified portfolio of assets while letting you trade it as easily as a stock, all under SEBI\u2019s regulatory oversight.",
+    "expected_tools": [
+      "search_finance_docs"
+    ],
+    "tools": [
+      "search_finance_docs"
+    ],
+    "paused": false,
+    "tool_recall": true,
+    "no_forbidden": true,
+    "approval_ok": true,
+    "latency_s": 3.4897289000000455
+  },
+  {
+    "id": "cmp-01",
+    "kind": "composed",
+    "error": "Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kzhz142fe9pad94g07z2jvt7` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 8111, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+    "tool_recall": false,
+    "no_forbidden": false,
+    "approval_ok": false,
+    "latency_s": 119.89692819999982,
+    "tools": []
+  },
+  {
+    "id": "cmp-02",
+    "kind": "composed",
+    "error": null,
+    "query": "Based on the 50/30/20 rule and my September 2025 spending, how am I doing?",
+    "answer": "**Your September\u202f2025 spending (\u20b9\u202f18,199 total)**  \n\n| Category | Amount (\u20b9) | Share of total |\n|----------|-----------|----------------|\n| Food | 4,450 | 24.5\u202f% |\n| Shopping | 3,500 | 19.2\u202f% |\n| Transport | 2,850 | 15.7\u202f% |\n| Education | 2,599 | 14.3\u202f% |\n| Utilities | 2,500 | 13.7\u202f% |\n| Health | 1,500 | 8.2\u202f% |\n| Entertainment | 800 | 4.4\u202f% |\n| **Grand total** | **18,199** | **100\u202f%** |\n\n### 1. 50/30/20 rule \u2013 what it says\nThe \u201c50\u202f%\u202fneeds\u202f/\u202f30\u202f%\u202fwants\u202f/\u202f20\u202f%\u202fsavings\u201d guideline is a widely\u2011cited personal\u2011finance framework, but it does **not** appear in the Indian regulator\u2011issued documents in our library (searches for \u201c50/30/20 budgeting rule\u201d returned no relevant passages).\u202fSo I\u2019m using the rule as it is commonly described in financial\u2011education material.\n\n### 2. Mapping your categories\n\n| 50\u202f%\u202fNeeds (essential living costs) | 30\u202f%\u202fWants (discretionary) | 20\u202f%\u202fSavings / Investments |\n|------------------------------------|---------------------------|----------------------------|\n| Food (groceries & basic meals) | Shopping (non\u2011essential purchases) | *No recorded savings/investments* |\n| Transport (fuel, public\u2011transport) | Entertainment (movies, outings) | |\n| Utilities (electricity, water, internet, mobile) | | |\n| Health (medicines, doctor fees) | | |\n| **Education** \u2013 could be a need (if it\u2019s mandatory schooling) or a want (optional courses). I\u2019ll present both views. |\n\n### 3. How your actual percentages compare\n\n| Scenario | Needs\u202f% | Wants\u202f% | Savings\u202f% |\n|----------|--------|--------|-----------|\n| **A \u2013 Education counted as a need** | (Food\u202f+\u202fTransport\u202f+\u202fUtilities\u202f+\u202fHealth\u202f+\u202fEducation) = 4,450\u202f+\u202f2,850\u202f+\u202f2,500\u202f+\u202f1,500\u202f+\u202f2,599 = **\u20b9\u202f13,899** \u2192 **76.4\u202f%** | Shopping\u202f+\u202fEntertainment = 3,500\u202f+\u202f800 = **\u20b9\u202f4,300** \u2192 **23.6\u202f%** | 0\u202f% |\n| **B \u2013 Education counted as a want** | (Food\u202f+\u202fTransport\u202f+\u202fUtilities\u202f+\u202fHealth) = **\u20b9\u202f11,300** \u2192 **62.1\u202f%** | Education\u202f+\u202fShopping\u202f+\u202fEntertainment = 2,599\u202f+\u202f3,500\u202f+\u202f800 = **\u20b9\u202f6,899** \u2192 **37.9\u202f%** | 0\u202f% |\n\n**What this tells you**\n\n| Target (50/30/20) | Your actual (Scenario\u202fA) | Your actual (Scenario\u202fB) |\n|-------------------|--------------------------|--------------------------|\n| Needs \u2264\u202f50\u202f% | **76.4\u202f%** (exceeds) | **62.1\u202f%** (exceeds) |\n| Wants \u2264\u202f30\u202f% | **23.6\u202f%** (within) | **37.9\u202f%** (exceeds) |\n| Savings \u2265\u202f20\u202f% | **0\u202f%** (short) | **0\u202f%** (short) |\n\nIn both interpretations you are **spending more than the recommended 50\u202f% on needs**, **under\u2011spending on savings**, and (depending on how you view education) either **within** or **above** the 30\u202f% \u201cwants\u201d ceiling.\n\n### 4. Quick\u2011look at the numbers\n\n- **Needs over\u2011run**:  \n  - Scenario\u202fA: 76.4\u202f%\u202f\u2013\u202f50\u202f%\u202f=\u202f+\u202f26.4\u202f% \u2192 **\u20b9\u202f4,819** above the target.  \n  - Scenario\u202fB: 62.1\u202f%\u202f\u2013\u202f50\u202f%\u202f=\u202f+\u202f12.1\u202f% \u2192 **\u20b9\u202f2,200** above the target.\n\n- **Savings gap**: 20\u202f% of \u20b9\u202f18,199\u202f=\u202f**\u20b9\u202f3,640** you are not setting aside.\n\n### 5. Practical next steps\n\n| Goal | Suggested action (based on your data) |\n|------|----------------------------------------|\n| **Trim needs** | \u2022 Review food spending \u2013 separate groceries (essential) from dining\u2011out; aim for \u2264\u202f\u20b9\u202f3,500 for essentials.<br>\u2022 Look for cheaper transport options (e.g., public\u2011transport passes). |\n| **Control wants** | \u2022 Shopping is 19.2\u202f% of total; set a monthly cap (e.g., \u20b9\u202f2,500) and stick to it.<br>\u2022 Entertainment already low (4.4\u202f%); keep it there. |\n| **Build savings** | \u2022 Allocate at least **\u20b9\u202f3,600** (\u224820\u202f% of income) to a dedicated savings or investment bucket (FD, PPF, mutual\u2011fund SIP).<br>\u2022 If you have any \u201cextra\u201d after trimming needs/wants, redirect it to savings. |\n| **Track education** | \u2022 If the education expense is mandatory (school fees), keep it in \u201cneeds\u201d.<br>\u2022 If it\u2019s optional (online courses, tutoring), treat it as a \u201cwant\u201d and consider reducing it until you meet the 20\u202f% savings target. |\n\n### 6. Bottom line\n- **Needs** are currently **62\u201376\u202f%** of your spending \u2013 higher than the 50\u202f% guideline.  \n- **Savings** are **0\u202f%**, well below the 20\u202f% target.  \n- **Wants** are **24\u201338\u202f%**, roughly in line (or a bit high if education is a want).\n\nAdjusting a few hundred rupees from discretionary shopping or dining\u2011out and directing them into a savings vehicle will bring you much closer to the 50/30/20 balance. Let me know if you\u2019d like help setting up a specific savings category or tracking future months!",
+    "expected_tools": [
+      "search_finance_docs",
+      "summarize"
+    ],
+    "tools": [
+      "list_categories",
+      "summarize",
+      "search_finance_docs",
+      "search_finance_docs",
+      "search_finance_docs"
+    ],
+    "paused": false,
+    "tool_recall": true,
+    "no_forbidden": true,
+    "approval_ok": true,
+    "latency_s": 83.1530917
+  },
+  {
+    "id": "cmp-03",
+    "kind": "composed",
+    "error": "Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kzhz142fe9pad94g07z2jvt7` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 9480, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+    "tool_recall": false,
+    "no_forbidden": false,
+    "approval_ok": false,
+    "latency_s": 129.7674919000001,
+    "tools": []
+  },
+  {
+    "id": "cmp-04",
+    "kind": "composed",
+    "error": null,
+    "query": "Which of my September 2025 categories count as needs versus wants?",
+    "answer": "**How \u201cneeds\u201d and \u201cwants\u201d are defined in the financial\u2011education handbook**\n\nThe handbook (Financial Education Handbook \u2013\u202fModule\u202f1\u202fBasic Concepts) defines:\n\n* **Need** \u2013 a necessity, something essential for life (e.g., roof, clothing, food, medication).  \n* **Want** \u2013 a desire, something non\u2011essential (e.g., movies, expensive saree, jewellery)\u3010source: FE_Handbook_Eng.pdf, Module\u202f1\u202fBasic Concepts\u3011.\n\n**Your September\u202f2025 spending categories**\n\n| Category | Total spent (\u20b9) | Need / Want | Why |\n|----------|----------------|------------|-----|\n| **Food** | 4,450 | **Need** | Food is a basic life\u2011sustaining requirement. |\n| **Shopping** | 3,500 | **Want** | \u201cShopping\u201d in your data is a discretionary purchase (e.g., apparel, accessories) and is not essential for survival. |\n| **Transport** | 2,850 | **Need** | Regular transport (e.g., commuting to work or school) is generally required to earn income or attend essential activities. |\n| **Education** | 2,599 | **Need** | Education is considered a necessity for personal development and future earning potential. |\n| **Utilities** (electricity, water, gas) | 2,500 | **Need** | Utilities provide basic shelter and living conditions. |\n| **Health** (medical/medicine) | 1,500 | **Need** | Medication and health care are essential for wellbeing. |\n| **Entertainment** | 800 | **Want** | Entertainment (movies, games, etc.) is a discretionary pleasure, not essential. |\n\n**Summary**\n\n- **Needs** (essential): Food, Transport, Education, Utilities, Health \u2013\u202faccount for **\u20b9\u202f13,899** (\u2248\u202f76\u202f% of September spending).  \n- **Wants** (non\u2011essential): Shopping, Entertainment \u2013\u202faccount for **\u20b9\u202f4,300** (\u2248\u202f24\u202f% of September spending).\n\nYou can use this split to see how much of your budget is devoted to necessities versus discretionary items, and adjust if you want to increase savings or reduce non\u2011essential spending.",
+    "expected_tools": [
+      "search_finance_docs",
+      "summarize"
+    ],
+    "tools": [
+      "search_finance_docs",
+      "summarize"
+    ],
+    "paused": false,
+    "tool_recall": true,
+    "no_forbidden": true,
+    "approval_ok": true,
+    "latency_s": 25.09896630000003
+  },
+  {
+    "id": "cmp-05",
+    "kind": "composed",
+    "error": "Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kzhz142fe9pad94g07z2jvt7` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 8784, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+    "tool_recall": false,
+    "no_forbidden": false,
+    "approval_ok": false,
+    "latency_s": 139.58595460000015,
+    "tools": []
+  },
+  {
+    "id": "cmp-06",
+    "kind": "composed",
+    "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kzhz142fe9pad94g07z2jvt7` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 197753, Requested 6565. Please try again in 31m5.376s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+    "tool_recall": false,
+    "no_forbidden": false,
+    "approval_ok": false,
+    "latency_s": 74.91677119999986,
+    "tools": []
+  },
+  {
+    "id": "cmp-07",
+    "kind": "composed",
+    "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kzhz142fe9pad94g07z2jvt7` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198055, Requested 2564. Please try again in 4m27.408s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+    "tool_recall": false,
+    "no_forbidden": false,
+    "approval_ok": false,
+    "latency_s": 4.434034999999767,
+    "tools": []
+  },
+  {
+    "id": "cmp-08",
+    "kind": "composed",
+    "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kzhz142fe9pad94g07z2jvt7` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198364, Requested 3427. Please try again in 12m53.712s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+    "tool_recall": false,
+    "no_forbidden": false,
+    "approval_ok": false,
+    "latency_s": 1.0740077000000383,
+    "tools": []
+  },
+  {
+    "id": "wrt-01",
+    "kind": "write",
+    "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kzhz142fe9pad94g07z2jvt7` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198364, Requested 1846. Please try again in 1m30.72s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+    "tool_recall": false,
+    "no_forbidden": false,
+    "approval_ok": false,
+    "latency_s": 0.035468800000217016,
+    "tools": []
+  },
+  {
+    "id": "wrt-02",
+    "kind": "write",
+    "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kzhz142fe9pad94g07z2jvt7` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198364, Requested 2324. Please try again in 4m57.216s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+    "tool_recall": false,
+    "no_forbidden": false,
+    "approval_ok": false,
+    "latency_s": 0.04433340000014141,
+    "tools": []
+  },
+  {
+    "id": "wrt-03",
+    "kind": "write",
+    "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kzhz142fe9pad94g07z2jvt7` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198364, Requested 2323. Please try again in 4m56.784s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+    "tool_recall": false,
+    "no_forbidden": false,
+    "approval_ok": false,
+    "latency_s": 0.03959609999992608,
+    "tools": []
+  },
+  {
+    "id": "wrt-04",
+    "kind": "write",
+    "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kzhz142fe9pad94g07z2jvt7` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198364, Requested 1844. Please try again in 1m29.856s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+    "tool_recall": false,
+    "no_forbidden": false,
+    "approval_ok": false,
+    "latency_s": 0.04229600000007849,
+    "tools": []
+  },
+  {
+    "id": "wrt-05",
+    "kind": "write",
+    "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kzhz142fe9pad94g07z2jvt7` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198364, Requested 1842. Please try again in 1m28.992s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+    "tool_recall": false,
+    "no_forbidden": false,
+    "approval_ok": false,
+    "latency_s": 0.03580520000014076,
+    "tools": []
+  },
+  {
+    "id": "adv-01",
+    "kind": "adversarial",
+    "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kzhz142fe9pad94g07z2jvt7` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198364, Requested 1830. Please try again in 1m23.808s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+    "tool_recall": false,
+    "no_forbidden": false,
+    "approval_ok": false,
+    "latency_s": 0.03453940000008515,
+    "tools": []
+  },
+  {
+    "id": "adv-02",
+    "kind": "adversarial",
+    "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kzhz142fe9pad94g07z2jvt7` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198364, Requested 1834. Please try again in 1m25.536s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+    "tool_recall": false,
+    "no_forbidden": false,
+    "approval_ok": false,
+    "latency_s": 0.03433549999999741,
+    "tools": []
+  },
+  {
+    "id": "adv-03",
+    "kind": "adversarial",
+    "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kzhz142fe9pad94g07z2jvt7` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198363, Requested 2318. Please try again in 4m54.192s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+    "tool_recall": false,
+    "no_forbidden": false,
+    "approval_ok": false,
+    "latency_s": 0.03528869999991002,
+    "tools": []
+  },
+  {
+    "id": "adv-04",
+    "kind": "adversarial",
+    "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kzhz142fe9pad94g07z2jvt7` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198363, Requested 2319. Please try again in 4m54.623999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+    "tool_recall": false,
+    "no_forbidden": false,
+    "approval_ok": false,
+    "latency_s": 0.03640050000012707,
+    "tools": []
+  },
+  {
+    "id": "adv-05",
+    "kind": "adversarial",
+    "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kzhz142fe9pad94g07z2jvt7` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198363, Requested 2316. Please try again in 4m53.328s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+    "tool_recall": false,
+    "no_forbidden": false,
+    "approval_ok": false,
+    "latency_s": 0.03454220000003261,
+    "tools": []
+  },
+  {
+    "id": "adv-06",
+    "kind": "adversarial",
+    "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kzhz142fe9pad94g07z2jvt7` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198363, Requested 1829. Please try again in 1m22.944s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+    "tool_recall": false,
+    "no_forbidden": false,
+    "approval_ok": false,
+    "latency_s": 0.032702700000299956,
+    "tools": []
+  },
+  {
+    "id": "adv-07",
+    "kind": "adversarial",
+    "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kzhz142fe9pad94g07z2jvt7` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198363, Requested 1832. Please try again in 1m24.24s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+    "tool_recall": false,
+    "no_forbidden": false,
+    "approval_ok": false,
+    "latency_s": 0.03380539999989196,
+    "tools": []
+  },
+  {
+    "id": "adv-08",
+    "kind": "adversarial",
+    "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kzhz142fe9pad94g07z2jvt7` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198363, Requested 1832. Please try again in 1m24.24s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+    "tool_recall": false,
+    "no_forbidden": false,
+    "approval_ok": false,
+    "latency_s": 0.034123599999929866,
+    "tools": []
+  },
+  {
+    "id": "adv-09",
+    "kind": "adversarial",
+    "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kzhz142fe9pad94g07z2jvt7` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198363, Requested 1833. Please try again in 1m24.672s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+    "tool_recall": false,
+    "no_forbidden": false,
+    "approval_ok": false,
+    "latency_s": 0.04006760000038412,
+    "tools": []
+  },
+  {
+    "id": "adv-10",
+    "kind": "adversarial",
+    "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kzhz142fe9pad94g07z2jvt7` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198363, Requested 2311. Please try again in 4m51.168s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+    "tool_recall": false,
+    "no_forbidden": false,
+    "approval_ok": false,
+    "latency_s": 0.035078599999906146,
+    "tools": []
+  },
+  {
+    "id": "adv-11",
+    "kind": "adversarial",
+    "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kzhz142fe9pad94g07z2jvt7` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198363, Requested 2316. Please try again in 4m53.328s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+    "tool_recall": false,
+    "no_forbidden": false,
+    "approval_ok": false,
+    "latency_s": 0.037591600000268954,
+    "tools": []
+  },
+  {
+    "id": "adv-12",
+    "kind": "adversarial",
+    "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kzhz142fe9pad94g07z2jvt7` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198363, Requested 1830. Please try again in 1m23.376s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+    "tool_recall": false,
+    "no_forbidden": false,
+    "approval_ok": false,
+    "latency_s": 0.03318029999991268,
+    "tools": []
+  }
+]

@@ -1,0 +1,60 @@
+# Personal Finance Copilot — install into a project venv, NOT globally:
+#
+#   python -m venv .venv
+#   .venv\Scripts\Activate.ps1
+#   pip install -r requirements.txt
+#
+# Verified on Python 3.14 (Windows). Versions below are what actually resolved.
+
+# ---- API layer ----
+fastapi==0.141.1
+uvicorn[standard]==0.52.1
+pydantic==2.13.4
+pydantic-settings==2.15.0
+python-dotenv==1.2.2
+
+# ---- Agent framework ----
+langgraph==1.2.10
+langgraph-prebuilt==1.1.0
+langgraph-checkpoint==4.2.0
+langgraph-checkpoint-sqlite==3.1.1
+aiosqlite==0.22.1
+
+# ---- LLM providers (groq default; openai is a one-env-var switch) ----
+langchain-core==1.5.3
+langchain-groq==1.1.3
+# langchain-openai            # uncomment only if LLM_PROVIDER=openai
+
+# ---- Observability ----
+langsmith==0.10.17
+
+# ---- MCP ----
+# NOTE: langchain-mcp-adapters is deliberately NOT used. On this stack it fails
+# the stdio handshake with "McpError: Connection closed" while the raw mcp SDK
+# completes it and lists all 4 tools (reproduce with scripts/diagnose_mcp.py).
+# app/tools/mcp_client.py talks to the mcp SDK directly instead.
+fastmcp==3.4.6
+mcp==1.29.0
+
+# ---- PDF extraction ----
+# pymupdf4llm chosen over pypdf on measured evidence: on data/corpus/, pypdf
+# reproduced a defective page 48x (267k chars from one page, 84% of the whole
+# document) and flattened tables. pymupdf4llm deduplicates and emits markdown
+# tables. `python scripts/ingest.py --report` shows the numbers for your corpus.
+# NOTE: PyMuPDF is AGPL-3.0. Fine for an open portfolio repo; swap to
+# pdfplumber (MIT) if this ever needs to be closed-source.
+pymupdf==1.28.2
+pymupdf4llm==1.28.2
+
+# ---- RAG ----
+langchain-text-splitters
+langchain-huggingface
+sentence-transformers
+faiss-cpu
+
+# FAISS lives in langchain-community, but 0.3.x pins langchain-core<1.0 which
+# conflicts with the core 1.x that langgraph 1.x needs. app/tools/vectorstore.py
+# tries several import locations and tells you which package to install.
+# Install ONE of these — try community first, fall back to classic:
+langchain-community
+# langchain-classic
